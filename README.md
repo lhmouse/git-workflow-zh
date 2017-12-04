@@ -73,11 +73,11 @@ master 分支（debug/unstable）仅作开发，产品分支（release/stable）
     $ git checkout master
     $ git pull --ff-only
     ```
-9. _删除本地的开发分支_ ：  
+9. _删除本地的_ 开发 _分支_ ：  
     ```sh
     $ git branch -d working
     ```
-10. _删除服务器上的开发分支_ ：  
+10. _删除服务器上的_ 开发 _分支_ ：  
     ```sh
     $ git push origin :working
     ```
