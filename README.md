@@ -141,3 +141,58 @@ master 分支（debug/unstable）仅作开发，产品分支（release/stable）
 3. 没事不要 merge。  
 4. 没事不要 merge。  
 5. 没事不要 merge。  
+
+## 对于已 fork 的仓库怎么合并上游修改、发布补丁
+
+（以下假定下游远端为 origin，上游远端为 upstream，双方的主分支都是 master。）
+
+1. 获取上游仓库：  
+    ```sh
+    $ git fetch upstream
+    ```
+2. 以当前分支为原本，创建一个新的分支用于变基：  
+    ```sh
+    $ git checkout -b rebasing
+    ```
+3. 对本地修改进行变基：  
+    ```sh
+    $ git rebase upstream/master
+    ```
+4. 如果遇到冲突，解决冲突。  
+5. 变基结束后，测试新的分支。  
+6. 如果测试没有问题，用新的分支 _替换_ 原来的分支：  
+    ```sh
+    $ git checkout -B master
+    ```
+8. 用本地的 master 分支 _覆盖服务器上的_ master _分支_ ：  
+    ```sh
+    $ git push origin +master
+    ```
+9. 将本地相对于上游新增的补丁导出成 .patch 文件（可以使用电子邮件发送给上游）：  
+    ```sh
+    $ git format-patch upstream/master
+    ```
+
+## 合并下游补丁
+
+1. 应用补丁文件：  
+    ```sh
+    $ git am 第一个补丁文件 第二个补丁文件
+    ```
+
+2. 推送到远端分支  
+    ```sh
+    $ git push
+    ```
+
+## 从其他分支挑拣单个提交
+
+1. 挑拣单个提交：  
+    ```sh
+    $ git cherry-pick 单个提交散列标识
+    ```
+
+2. 推送到远端分支  
+    ```sh
+    $ git push
+    ```
