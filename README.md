@@ -29,10 +29,10 @@ $ git config --global merge.ff=only           # 禁用非 --ff-only 的 merge �
 仅参考其中的 Gitlab flow。
 master 分支（debug/unstable）仅作开发，产品分支（release/stable）仅以 cherry-pick 更新。
 
-2. 《常用 Git 命令清单》  
+2. 《常用 Git 命令清单》  
 <http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html>
 
-3. 《Git 使用规范流程》  
+3. 《Git 使用规范流程》  
 <http://www.ruanyifeng.com/blog/2015/08/git-use-process.html>
 
 ## 禁止事项
