@@ -7,6 +7,10 @@
 
 如果你不能理解本文的内容，照着做就是了；如果你连照着做也做不到，就不要用 Git。
 
+## 获得一个文本编辑器
+
+Git 有时候需要你使用 [文本编辑器](https://en.wikipedia.org/wiki/Text_editor) ，例如你使用 `git commit` 的时候它会提示你输入提交注释，你使用 `git rebase -i` 的时候它会将即将执行的命令的清单显示给你并且你可能会对其进行修改。那个叫 [vim](https://vim.sourceforge.io/) 的 [_不配_ 被称为文本编辑器](https://stackoverflow.blog/2017/05/23/stack-overflow-helping-one-million-developers-exit-vim/)。我们推荐使用 [GNU nano](https://www.nano-editor.org/)。如果你在用 Windows，可以试试 [这个](https://files.lhmouse.com/nano-win/)。
+
 ## 修改全局设置
 
 在你能好好地使用 Git 管理你的代码之前，把这几个设置改一下：  
