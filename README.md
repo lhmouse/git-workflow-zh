@@ -115,10 +115,12 @@ master 分支（debug/unstable）仅作开发，产品分支（release/stable）
         2. _丢弃本地的修改_ ，使用服务器的文件（对于变基操作 `--ours` 是 _基点_ ）：  
         ```sh
         $ git checkout --ours 变基出现冲突的文件
+        $ git add 变基出现冲突的文件
         ```
         3. _丢弃服务器的修改_ ，使用本地的文件（对于变基操作 `--theirs` 是 _本地_ ）：  
         ```sh
         $ git checkout --theirs 变基出现冲突的文件
+        $ git add 变基出现冲突的文件
         ```
 6. 重复 3~5 直到解决所有冲突，然后 _继续变基操作_ ：  
     ```sh
