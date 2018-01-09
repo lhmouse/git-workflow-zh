@@ -52,6 +52,8 @@ master 分支（debug/unstable）仅作开发，产品分支（release/stable）
 
 ## 一般开发流程
 
+![一般开发流程](https://raw.githubusercontent.com/lhmouse/git-workflow-zh/master/workflow-normal.jpg)
+
 1. _获取_ 最新代码：  
     ```sh
     $ git checkout master
@@ -88,7 +90,6 @@ master 分支（debug/unstable）仅作开发，产品分支（release/stable）
     ```sh
     $ git push origin :working
     ```
-
 ## 如何解决冲突：
 
 1. _获取_ 最新代码：  
@@ -142,6 +143,10 @@ master 分支（debug/unstable）仅作开发，产品分支（release/stable）
     ```sh
     $ git rebase --abort
     ```
+
+## 简化的开发流程（适用于代码不需要审核的情况）
+
+![简化的开发流程](https://raw.githubusercontent.com/lhmouse/git-workflow-zh/master/workflow-simplified.jpg)
 
 ## 切记
 
