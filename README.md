@@ -50,9 +50,9 @@ master 分支（debug/unstable）仅作开发，产品分支（release/stable）
 4. 禁止 pull， `--ff-only` 和 `--rebase` 除外。
 5. 文本文件禁止使用宽字符编码，非手动编辑的文件除外。
 
-## 一般开发流程
+![开发流程](https://raw.githubusercontent.com/lhmouse/git-workflow-zh/master/workflow.jpg)
 
-![一般开发流程](https://raw.githubusercontent.com/lhmouse/git-workflow-zh/master/workflow-normal.jpg)
+## 一般开发流程
 
 1. _获取_ 最新代码：  
     ```sh
@@ -143,10 +143,6 @@ master 分支（debug/unstable）仅作开发，产品分支（release/stable）
     ```sh
     $ git rebase --abort
     ```
-
-## 简化的开发流程（适用于代码不需要审核的情况）
-
-![简化的开发流程](https://raw.githubusercontent.com/lhmouse/git-workflow-zh/master/workflow-simplified.jpg)
 
 ## 切记
 
