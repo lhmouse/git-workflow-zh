@@ -71,7 +71,7 @@ master 分支（debug/unstable）仅作开发，产品分支（release/stable）
     $ git add 第二个文件
     $ git commit
     ```
-5. 将本地分支 working _推送到_ 服务器上，创建一个新的 _远端分支_ origin/working：  
+5. 将本地分支 working _推送_ 到服务器上，创建一个新的 _远端分支_ origin/working：  
     ```
     $ git push origin working
     ```
