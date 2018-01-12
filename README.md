@@ -27,7 +27,7 @@ $ git config --global pull.ff only            # 禁用非 --ff-only 的 pull 操
 $ git config --global merge.ff only           # 禁用非 --ff-only 的 merge 操作。
 ```
 
-[1] <http://lists.gnu.org/archive/html/nano-devel/2017-12/msg00119.html>
+[1] <http://lists.gnu.org/archive/html/nano-devel/2017-12/msg00117.html>
 
 ## 开发者手册
 
