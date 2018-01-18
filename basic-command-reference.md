@@ -185,12 +185,12 @@ git rm --force <冲突的文件>...
 git checkout <源分支> [--] <待提取的文件或文件夹>
 ```
 
-提取发生 _冲突_ 的文件的 _我的版本（mine）_（对于 `git merge`）或 _其他人的版本（theirs）_（对于 `git rebase`）进入 _工作区_，保留冲突状态：  
+提取发生 _冲突_ 的文件的对应当前分支（对于 `git merge`）或目标分支（对于 `git rebase`）上的文件或文件夹进入 _工作区_，保留冲突状态：  
 ```text
-git checkout --mine [--] <待提取的文件或文件夹>
+git checkout --ours [--] <待提取的文件或文件夹>
 ```
 
-提取发生 _冲突_ 的文件的 _其他人的版本_（对于 `git merge`）或 _我的版本_（对于 `git rebase`）进入 _工作区_，保留冲突状态：  
+提取发生 _冲突_ 的文件的对应目标分支（对于 `git merge`）或当前分支（对于 `git rebase`）上的文件或文件夹进入 _工作区_，保留冲突状态：  
 ```text
 git checkout --theirs [--] <待提取的文件或文件夹>
 ```
