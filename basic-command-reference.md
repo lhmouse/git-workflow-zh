@@ -163,6 +163,11 @@ git checkout HEAD -- :/
 
 丢弃 _暂存区_ 和 _工作区_ 的所有修改（方法二）：  
 ```text
+git checkout -f
+```
+
+丢弃 _暂存区_ 和 _工作区_ 的所有修改（方法三）：  
+```text
 git reset --hard
 ```
 
