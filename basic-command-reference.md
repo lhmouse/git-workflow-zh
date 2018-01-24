@@ -15,6 +15,8 @@
 
 ## 命令参考
 
+![入门命令参考](basic-command-reference.jpg)
+
 #### 将 _仓库（repository）_ _克隆（clone）_ 到本地文件系统。
 
 克隆到和仓库同名的文件夹：  
