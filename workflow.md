@@ -25,6 +25,7 @@ $ git config --global core.autocrlf input         # 别把 CR LF 提交到服务
 $ git config --global push.default simple         # 仅 push 当前分支。
 $ git config --global pull.ff only                # 禁用非 --ff-only 的 pull 操作。
 $ git config --global merge.ff only               # 禁用非 --ff-only 的 merge 操作。
+$ git config --global log.date iso                # 使用国标日期格式，例如 `2020-09-16 14:04:17 +0800`。
 ```
 
 [1] <http://lists.gnu.org/archive/html/nano-devel/2017-12/msg00117.html>
